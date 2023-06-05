@@ -7,9 +7,17 @@
         box-shadow: var(--shadow-l1);
         padding: var(--card-padding);
     }
+    :root {
+        --twikoo-action-btn-color: #409eff;
+        --twikoo-replies-bg-color: #f7f7f7;
+        --twikoo-replies-expand-btn: #eee;
+    }
     :root[data-scheme="dark"] {
         --twikoo-body-text-color-main: rgba(255, 255, 255, 0.9);
         --twikoo-body-text-color: rgba(255, 255, 255, 0.7);
+        --twikoo-action-btn-color: rgba(255, 255, 255, 0.7);
+        --twikoo-replies-bg-color: #565656;
+        --twikoo-replies-expand-btn: #6c6c6c;
     }
     .twikoo .el-input-group__prepend,
     .twikoo .tk-action-icon,
@@ -31,6 +39,78 @@
     .OwO .OwO-body {
         background-color: var(--body-background) !important;
         color: var(--body-text-color) !important;
+    }
+
+    /* 定制 */
+    .tk-avatar {
+        width: 4rem;
+        height: 4rem;
+    }
+    .tk-avatar .tk-avatar-img {
+        height: 100% !important;
+    }
+    .tk-row {
+        line-height: 2rem;
+    }
+    .tk-content {
+        line-height: 2.4rem;
+    }
+    .tk-content p {
+        margin: 0;
+    }
+    .tk-replies .tk-avatar {
+        width: 3rem;
+        height: 3rem;
+    }
+    .tk-replies {
+        margin-top: 1rem;
+        padding: 0 10px;
+        overflow: hidden;
+        border-radius: 4px;
+        background-color: var(--twikoo-replies-bg-color);
+    }
+    .tk-time {
+        margin-left: 1rem;
+    }
+    .tk-meta {
+        display: flex;
+    }
+    .tk-row.actions {
+        margin-left: 5rem;
+    }
+    .tk-comments-title {
+        font-size: 2.2rem;
+        margin: 2rem 0;
+    }
+    .tk-row-actions-start {
+        color: var(--twikoo-body-text-color);
+    }
+    .twikoo .el-textarea .el-input__count {
+        color: var(--twikoo-body-text-color) !important;
+    }
+    .tk-expand {
+        color: var(--twikoo-body-text-color);
+        background-color: var(--twikoo-replies-expand-btn);
+    }
+    .tk-action-link {
+        cursor: pointer;
+        color: var(--twikoo-action-btn-color);
+    }
+    .tk-actions > a {
+        cursor: pointer;
+        margin-right: 1rem;
+    }
+    .tk-tag {
+        margin-left: 1rem;
+    }
+    .tk-ruser {
+        color: #409eff;
+    }
+    .tk-comments-no {
+        color: var(--twikoo-body-text-color);
+    }
+    .tk-comments-no::before {
+        content: "🎉";
     }
 </style>
 
